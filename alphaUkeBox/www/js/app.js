@@ -67,7 +67,13 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'PlaylistCtrl'
       }
     }
-  });
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  })
+
+    .state('login', {
+      url:'/login',
+      templateUrl: '../template/login.html',
+      controller: 'LoginCtrl'
+    });
+
+    $urlRouterProvider.otherwise('/login');
 });
