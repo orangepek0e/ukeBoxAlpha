@@ -1,25 +1,16 @@
-<ion-view title="Login">
-  <ion-content overflow-scroll="true" padding="true" class="has-header main-defaults">
-
-    <div class="logo-large"></div>
-
-    <div class="bottom-pin-button">
-      <form class="list" ng-submit="doLogin()">
-        <div class="form-wrapper">
-          <ion-list>
-            <label class="item item-input form-fields top">
-              <span class="input-label light-blue">Email</span>
-              <input type="text" placeholder="" ng-model="loginData.email">
-            </label>
-            <label class="item item-input form-fields bottom">
-              <span class="input-label light-blue">Password</span>
-              <input type="password" placeholder="" ng-model="loginData.password">
-            </label>
-          </ion-list>
-        </div>
-        <button class="button button-energized button-block button-block" type="submit">LOGIN</button>
-        <a ui-sref="join" class="button button-light button-clear button-block button-small icon ion-android-person-add">JOIN THE PACK</a>
-      </form>
+<ion-view title="Sign In">
+  <ion-content class="padding">
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" placeholder="Name" ng-model="user.name">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Password" ng-model="user.password">
+      </label>
     </div>
+    <button class="button button-full button-balanced" ng-click="login()">
+      Login
+    </button>
+    <button class="button button-positive button-clear button-full" ui-sref="outside.register">Register now!</button>
   </ion-content>
 </ion-view>
