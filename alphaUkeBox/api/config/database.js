@@ -1,3 +1,4 @@
-/**
- * Created by orangepek0e on 16-02-13.
- */
+module.exports = {
+  'secret': 'orangepek0e_is_bigger_than_hiphop',
+  'database': 'mongodb://localhost:27017/UkeBoxAuth'
+};
