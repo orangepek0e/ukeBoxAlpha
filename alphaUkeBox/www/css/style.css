@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab);
+
+/*LOGIN & REGISTER ASSETS*/
+
+.loginScreen{
+  background-color: #5C33B2;
+  padding-top:16% !important;
+}
+
+.loginScreenIcon{
+  width: 50%;
+  height:auto;
+}
+
+.loginScreenTitle{
+  font-family: 'Roboto Slab', serif;
+  font-size: 56px;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.userInputField{
+  background-color: #D8D8D8;
+  font-family: 'Roboto Slab', serif;
+  border-radius: 25px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  margin-top: 6%;
+}
+
+.loginScreenButtons{
+  margin-top: 5%;
+}
+
+.loginButton{
+  background-color: #9F3636;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: white;
+  border: 1px solid #662E2B;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50), 0px 2px 4px 0px rgba(0,0,0,0.50);
+  border-radius: 5px;
+  height: 60px;
+}
+
+.registerButton{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: white !important;
+}
+
+

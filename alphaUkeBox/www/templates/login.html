@@ -1,16 +1,24 @@
-<ion-view title="Sign In">
-  <ion-content class="padding">
+<ion-view hide-nav-bar="true">
+  <ion-content class="padding loginScreen">
+    <div class="hero no-header flat">
+      <div class="content">
+        <div>
+          <img class="loginScreenIcon" src="../img/icon.png">
+        </div>
+        <p class="loginScreenTitle">UkeBox</p>
+      </div>
+    </div>
     <div class="list">
-      <label class="item item-input">
-        <input type="text" placeholder="Name" ng-model="user.name">
+      <label class="item item-input userInputField">
+        <input type="text" placeholder="Username" ng-model="user.name">
       </label>
-      <label class="item item-input">
+      <label class="item item-input userInputField">
         <input type="password" placeholder="Password" ng-model="user.password">
       </label>
     </div>
-    <button class="button button-full button-balanced" ng-click="login()">
-      Login
-    </button>
-    <button class="button button-positive button-clear button-full" ui-sref="outside.register">Register now!</button>
+    <div class="loginScreenButtons">
+      <button class="button button-full loginButton" ng-click="login()"> Login </button>
+      <button class="button button-clear registerButton button-full" ui-sref="outside.register">Register now!</button>
+    </div>
   </ion-content>
 </ion-view>

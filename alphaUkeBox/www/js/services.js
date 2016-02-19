@@ -1,7 +1,7 @@
 angular.module('starter')
 
   .service('AuthService', function($q, $http, API_ENDPOINT) {
-    var LOCAL_TOKEN_KEY = 'yourTokenKey';
+    var LOCAL_TOKEN_KEY = "";
     var isAuthenticated = false;
     var authToken;
 
@@ -49,6 +49,7 @@ angular.module('starter')
         $http.post(API_ENDPOINT.url + '/authenticate', user).then(function(result) {
           if (result.data.success) {
             storeUserCredentials(result.data.token);
+            //$localStorage.token = result.data.token;
             resolve(result.data.msg);
           } else {
             reject(result.data.msg);
